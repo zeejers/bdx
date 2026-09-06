@@ -1,7 +1,11 @@
 ---
 name: slice-review
 description: >-
-  Review a slice that /slice just landed under a constrained finding-contract - CONFIRMED requires an executable repro run against the current code (trace-only suspicion is PLAUSIBLE), one bounded mutation probe checks the slice's net can actually go red, an empty findings list is a PASS, only CONFIRMED blocks, PLAUSIBLE goes to the backlog, and the review runs exactly one round. Optionally borrows a saved persona as its lens. Use to close a slice without the review-until-clean loop that terminates by exhaustion instead of correctness.
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context.
+  Review one landed slice in one round under a constrained finding contract:
+  executable reproduction is CONFIRMED, trace-only suspicion is PLAUSIBLE, only
+  CONFIRMED blocks, and an empty findings list is a pass.
 ---
 
 ## Codex host execution (mandatory)

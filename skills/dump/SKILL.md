@@ -1,6 +1,11 @@
 ---
 name: dump
-description: Snapshot mid-session head-state to $AGENT_HOME/context/ so the user can fearlessly log out and a future `attach` can re-enter cold. Also sweeps the plan for obviously-done checkboxes and ticks them (with optional one-line divergence annotations) so the plan stays a live progress view. Use when the user is about to walk away from a session (closing the tab, switching tasks, end-of-day) and the work isn't ready to summarize. Skip if a single step just finished and you only want the plan ticked — use `check` for that lighter operation.
+description: >-
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context. Snapshot
+  unfinished session state to $AGENT_HOME/context/ for a future cold attach and tick
+  demonstrably completed plan boxes. Use check for progress without handoff and
+  summarize for finished work.
 ---
 
 ## Codex host execution (mandatory)

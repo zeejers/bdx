@@ -1,7 +1,11 @@
 ---
 name: attach
 description: >-
-  Resume an existing bd-tracked task: load its plan + prior contexts/summaries, append the current harness-qualified session identity to the plan's `sessions:`, and flip bd status to in_progress. Use at the start of a session that's continuing prior work — especially if the prior session was dumped/closed cold and you need state loaded fresh. Skip for ad-hoc bd updates (a bare `bd update --status in_progress` is enough) or for starting brand-new work (use plan instead). Predecessor: plan or scope. Successor: dump (mid-session save) or summarize (when work ships).
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context.
+  Resume an existing bd-tracked task by loading its durable history, recording the
+  current session, and moving it to in_progress. Use for a cold continuation; use
+  plan for new work or scope for an existing bare issue.
 ---
 
 ## Codex host execution (mandatory)

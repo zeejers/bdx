@@ -52,6 +52,14 @@ ACTUAL_SKILLS=$(find skills -mindepth 1 -maxdepth 1 -type d \
   fail "skill surface drifted"
 }
 
+for skill_file in skills/*/SKILL.md; do
+  skill_frontmatter=$(awk 'NR == 1 { next } /^---$/ { exit } { print }' "$skill_file")
+  case "$skill_frontmatter" in
+    *"Opt-in BDX only"*) ;;
+    *) fail "skill is missing the BDX opt-in routing gate: $skill_file" ;;
+  esac
+done
+
 for required in \
   hooks/hooks.json \
   scripts/bd-auto-attach.sh \

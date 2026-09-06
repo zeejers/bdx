@@ -1,7 +1,11 @@
 ---
 name: slice-loop
 description: >-
-  Autonomously execute a plan by orchestrating worker subagents that each run a quota of slice → slice-review iterations, with a mechanism-level quality-audit checkpoint at every worker handoff, until a caller-specified goal is met ("until phase 5-6 complete", "until the plan is done", a bd-id's remaining boxes). Use when the user wants a plan executed without per-slice approval but with the full slice audit trail — "slice-loop until X", "loop slices on this plan", "run the rest of the plan with slices", "autonomously finish phase N". Not for decision-dense or unsettled-design work — this skill halts back to the human when it hits those.
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context.
+  Autonomously execute a settled plan through worker-run slice and slice-review
+  iterations, with a mechanism audit at each handoff. Use when the user wants the
+  full per-increment audit trail without per-slice approval; halt on unsettled design.
 ---
 
 ## Codex host execution (mandatory)

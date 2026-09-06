@@ -1,7 +1,11 @@
 ---
 name: triage
 description: >-
-  Drain the inbox and unscoped bd queues — for each item, decide whether to merge into an existing task or seed a new one (via plan or scope). Use periodically (start of day, between tasks, when the inbox is piling up) to clear capture into structured state. Skip for one-off conversions of a single item (use scope on the bd-id, or plan to convert one inbox note manually). Triage never starts execution — output is always tasks ready for a later attach. Predecessor: phone capture / `bd create` shorthand. Successor: plan or scope.
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context.
+  Drain BDX inbox and unscoped bd queues by merging each item into existing work or
+  creating a planned task. Use scope or plan for a single item. Triage structures
+  work for later attach and never starts execution.
 ---
 
 ## Codex host execution (mandatory)

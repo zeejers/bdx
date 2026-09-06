@@ -1,6 +1,10 @@
 ---
 name: manifest
-description: Inspect a project on disk and add or update its entry in $AGENT_HOME/manifest.md (slug, path, repo, type, components, notes — everything except aliases, which is asked). Use when onboarding a new repo to bdx so plan/scope can validate project + component labels against the manifest, or when a project's structure has shifted enough to need updating. Skip for routine label edits on a single bd issue (use `label` instead). The manifest is an infrastructure file, not a per-task one.
+description: >-
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context. Inspect a
+  project and add or update its $AGENT_HOME/manifest.md entry for BDX routing and
+  label validation. Use label for changes to one bd issue.
 ---
 
 ## Codex host execution (mandatory)

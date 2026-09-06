@@ -1,6 +1,10 @@
 ---
 name: slice
-description: Drive implementation in bounded, verifiable, defensible increments - one slice per turn, walking-skeleton first, verify-and-narrate, then halt. Use when you want visible, reviewable, senior-looking implementation instead of a monolithic autonomous build - high-visibility pairing, or any change you must defend line by line. Pairs after a plan/spec step. For a ceremony-free fast start (spikes, demos, timed builds), reach for `/skeleton` instead.
+description: >-
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context. Implement
+  one bounded, executable-verified increment per turn, walking-skeleton first, then
+  halt for review. Use skeleton for a ceremony-free fast start.
 ---
 
 # slice

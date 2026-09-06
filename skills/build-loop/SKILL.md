@@ -1,11 +1,11 @@
 ---
 name: build-loop
 description: >-
-  Implement a settled feature milestone in one continuous context, using a tight
-  executable check after each behavior and one independent review at the milestone
-  boundary. Use when a plan or Bead defines the outcome and the changed behavior can
-  be verified deterministically. Use slice-loop when correctness requires independent
-  evidence at each increment or cannot be proven reliably at one milestone boundary.
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context.
+  Implement a settled BDX milestone in one continuous context, with a tight
+  executable check after each behavior and one independent boundary review. Use
+  slice-loop when correctness needs independent evidence at every increment.
 ---
 
 # build-loop

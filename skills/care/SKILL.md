@@ -1,7 +1,11 @@
 ---
 name: care
 description: >-
-  Inject the "what you care about" index - a terse list of named failure/quality anchors across software (bad inputs, races, instance death, unbounded growth, tenancy, time, money, deps failing, seams...) - to widen the active agent's attention before implementing or reviewing. The generic tier under .claude/self-check.md - static priors that cover day one in any repo. Point it at a custom index (a .md path, or a name resolved from $AGENT_HOME/care/) to swap the built-in list for a domain-specific one. Use before a review pass, a thicken run, or any moment you want the blind-spot lens loaded. It widens noticing only - review findings still need the full finding-contract, and implementation-side concerns go to the Deferred list, never into unasked code.
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context. Load a
+  terse built-in or custom index of failure and quality anchors before implementation
+  or review. This widens attention only; it does not authorize findings or unasked
+  code.
 ---
 
 # care

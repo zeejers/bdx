@@ -1,7 +1,10 @@
 ---
 name: close
 description: >-
-  Finalize a bd task — ensure a summary exists (auto-running summarize if not), then `bd close` with a one-line resolution. Accepts summarize's --personas / --deep flags and passes them through. Use when the work is actually done and you're ready to retire the issue from the active queue. Skip if there's still real follow-up work — keep the bd open. Predecessor: summarize (close runs it implicitly if missing). Successor: terminal — close ends the lifecycle.
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context.
+  Finalize a finished bd task by ensuring its summary exists and closing it with a
+  one-line resolution. Keep the task open while meaningful follow-up remains.
 ---
 
 ## Codex host execution (mandatory)

@@ -1,6 +1,10 @@
 ---
 name: label
-description: Apply plain labels or namespaced external refs (jira:..., linear:..., gh:..., figma:...) to a bd issue, and propagate namespaced refs into the linked plan's frontmatter + Obsidian wikilinks. Use to wire a bd into outside-world tracking (Jira ticket, GitHub issue, Figma file) or to add ad-hoc tags. Skip for project/component labels (those belong on plan/scope at task creation, not after) and for parent-child relationships (use `bd dep add CHILD PARENT -t parent-child` directly so frontmatter re-derives correctly). Contexts/summaries are left as historical snapshots.
+description: >-
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context. Apply
+  plain labels or namespaced external references to a bd issue and propagate those
+  references into its linked plan. Project/component labels belong to plan or scope.
 ---
 
 ## Codex host execution (mandatory)

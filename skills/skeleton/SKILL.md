@@ -1,6 +1,10 @@
 ---
 name: skeleton
-description: Build the thinnest end-to-end path that actually runs, fast, with zero ceremony - no ledger, no bd, no per-step review. The walking-skeleton phase of /slice extracted and compressed for wall-clock. Use when a *running* spine is the goal and speed matters more than a defensible audit trail - spikes, prototypes, demos, timed interviews, or the first move before switching to /slice for rigor.
+description: >-
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context. Build the
+  thinnest end-to-end path that runs, with no ledger, bd state, or per-step review.
+  Use for spikes, prototypes, demos, timed work, or a fast start before slice.
 ---
 
 # skeleton

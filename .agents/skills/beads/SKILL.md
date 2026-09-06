@@ -1,11 +1,18 @@
 ---
 name: beads
-description: Use when working in a repository that uses bd or Beads for durable project task tracking, issue dependencies, blocker management, multi-session handoff, or shared work memory. Trigger when the user asks to find ready work, claim or close tasks, create follow-up work, inspect blockers, recover project context, or choose between local planning and persistent project tracking.
+description: >-
+  Opt-in only: use when the user explicitly requests BDX/Beads task tracking, asks
+  to operate on a Beads issue, or BDX auto-attach context is present. Do not infer
+  activation from the repository containing Beads or from the size of the task. Once
+  active, use for issue dependencies, blockers, handoff, shared work memory, and
+  finding, claiming, updating, or closing tracked work.
 ---
 
 # Beads
 
-Use Beads as the shared project task system. Local plans, scratch files, and personal memories are useful, but they are not the durable source of truth for project work.
+For a session explicitly opted into BDX/Beads, use Beads as the shared project task
+system. Local plans, scratch files, and personal memories are useful, but they are
+not the durable source of truth for tracked project work.
 
 ## First Step
 

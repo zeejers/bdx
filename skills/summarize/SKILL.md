@@ -1,7 +1,11 @@
 ---
 name: summarize
 description: >-
-  Write the durable post-implementation record to $AGENT_HOME/summary/ and back-link to the bd issue. Persona reviews are opt-in via --personas. Use when a task's work is done and ready to be remembered — even if the bd isn't being closed yet (follow-ups can keep the bd open). Skip mid-flight (use dump for fearlessly-log-out snapshots) or for trivial fixes where a `bd close -r` is the whole record. Predecessor: attach + a finished work session. Successor: close (which auto-runs summarize if missing).
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context.
+  Write the durable post-implementation record under $AGENT_HOME/summary/ and link
+  it to the bd issue. Use for finished tracked work; use dump while work is still in
+  flight. Persona review remains separately opt-in.
 ---
 
 ## Codex host execution (mandatory)

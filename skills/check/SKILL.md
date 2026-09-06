@@ -1,6 +1,10 @@
 ---
 name: check
-description: Tick one or more checkboxes on a bd's plan file — atomic, append-only, no context/summary side effects. Use when a step from the plan is done and you want the plan to reflect it (so peeking at the plan shows real progress) without writing a context dump or summary. Skip if the work warrants a full mid-session snapshot (use `dump`) or is shipped (use `summarize`). Skip also for adding new checkboxes — edit the plan directly.
+description: >-
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context. Tick
+  completed checkboxes in an active bd plan without writing context or a summary.
+  Use dump for handoff and summarize for shipped work.
 ---
 
 ## Codex host execution (mandatory)

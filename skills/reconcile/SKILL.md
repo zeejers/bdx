@@ -1,7 +1,11 @@
 ---
 name: reconcile
 description: >-
-  Reconcile the open bd queue against ground truth — the durable notes in $AGENT_HOME and the actual code in the repos listed in the manifest — at two granularities: which issues should close or supersede, and which individual plan checkboxes the code proves are already done. Every close proposal and every tick must carry executable evidence from the codebase (a file/symbol/test that exists, a commit that landed, a check that passes); prose overlap alone is never enough. Use when the queue has drifted from reality — work shipped in sessions that never ran `close` or `check`, or several bds describe work one change already did. Run `--boxes` for the cheap tick-only sweep. Skip for a single issue you know is done (use `close`) or a single box you just finished (use `check`), and for draining capture into tasks (use `triage`, the forward direction). Predecessor: none. Successor: close / supersede / check.
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context.
+  Reconcile the open bd queue and plan checkboxes against durable notes and executable
+  code evidence. Use for queue drift; use close for one known-finished issue, check
+  for one completed box, and triage for incoming work.
 ---
 
 ## Codex host execution (mandatory)

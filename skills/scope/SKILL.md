@@ -1,7 +1,11 @@
 ---
 name: scope
 description: >-
-  Retrofit an existing unscoped bd issue with a project label and a paired plan file. Use when a bd was created bare (phone capture, direct `bd create`, or as part of triage) and now needs to enter the plan/attach lifecycle. Skip if the bd already has a plan file (the plan is authoritative — edit it directly) or if you're starting fresh work without an existing bd (use plan instead). Predecessor: triage (or a manual `bd create`). Successor: attach.
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context.
+  Retrofit an existing bare bd issue with a project label and paired plan so it can
+  enter the BDX lifecycle. Use plan for new work; edit the existing plan when one is
+  already linked.
 ---
 
 ## Codex host execution (mandatory)

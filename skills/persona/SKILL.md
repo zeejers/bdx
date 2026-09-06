@@ -1,6 +1,10 @@
 ---
 name: persona
-description: Invoke a saved persona from $AGENT_HOME/personas/ to review a target (file, bd-id, diff, prose, or free-form prompt) in their voice — or use `auto` to let the library pick 1–3 personas by their `description:` field. Use when a sharp opinion in a specific voice is more useful than a neutral take (code review, plan critique, prose pass). Skip if you want consensus or hedged synthesis — this skill prints disagreements verbatim. Used internally by summarize to attach reviews to shipped work; otherwise standalone.
+description: >-
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context. Review a
+  target in a saved persona's voice, or let auto select personas. Use for a sharp
+  opinion rather than neutral consensus; summarize may route here for shipped work.
 ---
 
 ## Codex host execution (mandatory)

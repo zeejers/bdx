@@ -1,7 +1,10 @@
 ---
 name: plan
 description: >-
-  Open a new bd task with a paired plan file at $AGENT_HOME/plan/. Use for non-trivial work that warrants a written-down approach (multi-step, cross-cutting, or you'll need to re-enter cold). Skip for one-line fixes (just `bd create` + a body) or when the bd already exists (use scope instead). Predecessor: triage (or none, for fresh ideas). Successor: attach.
+  Opt-in BDX only—use on an explicit request for this skill, or inside a session
+  activated by bdx:plan, bdx:attach, bdx:scope, or BDX auto-attach context.
+  Open a new bd task with a paired plan under $AGENT_HOME/plan/. Use for new work the
+  user wants tracked durably; use scope when the bd issue already exists.
 ---
 
 ## Codex host execution (mandatory)

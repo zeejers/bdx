@@ -1,6 +1,8 @@
 # bdx
 
-**Every agent session writes a markdown plan/summary keyed by a `bd` issue. The session ends; the record stays, and ordinary feature work moves through one tight build loop.**
+**Opt a session into BDX when the work needs a durable `bd`-keyed plan and
+summary. The session ends; the record stays, and tracked feature work moves through
+one tight build loop.**
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-plugin-D97757?logo=anthropic&logoColor=white) ![beads](https://img.shields.io/badge/beads-task_glue-9333EA) ![dolt](https://img.shields.io/badge/dolt-versioned_storage-1E40AF) ![status](https://img.shields.io/badge/status-experimental-yellow)
 
@@ -33,6 +35,12 @@ codex plugin marketplace add zeejers/bdx && codex plugin add bdx@bdx-marketplace
 ```
 
 ## Usage
+
+BDX is session-scoped and opt-in. Ordinary prompts—including code and skill edits—
+stay in the repository's normal workflow. The lifecycle activates only when you
+explicitly invoke a `bdx:*` skill (normally `plan`, `attach`, or `scope`), ask for
+BDX/Beads tracking, or start with BDX auto-attach context. After that, BDX skills may
+route to one another for the active task.
 
 Default feature path:
 
